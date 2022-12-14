@@ -1,14 +1,14 @@
-package com.example.dima_spring.crudRepository;
+package com.example.dima_spring.repository;
 
-import com.example.dima_spring.model.MyUser;
+import com.example.dima_spring.model.MyUserDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface MyUserRepository extends JpaRepository<MyUser, Long> {
+public interface MyUserDetailsRepository extends JpaRepository<MyUserDetails, Long> {
 
-    Optional<MyUser> findByUserName(String userName);
+    Optional<MyUserDetails> findByUserName(String userName);
 
 }

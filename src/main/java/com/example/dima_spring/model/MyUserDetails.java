@@ -4,12 +4,12 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "user")
-public class MyUser {
+public class MyUserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String firstName;
-    private String SecondNmae;
+    private String SecondName;
     private String userName;
     private String password;
 
@@ -29,12 +29,12 @@ public class MyUser {
         this.firstName = firstName;
     }
 
-    public String getSecondNmae() {
-        return SecondNmae;
+    public String getSecondName() {
+        return SecondName;
     }
 
-    public void setSecondNmae(String secondNmae) {
-        SecondNmae = secondNmae;
+    public void setSecondName(String secondName) {
+        SecondName = secondName;
     }
 
     public String getUserName() {
